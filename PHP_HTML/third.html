@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            User Registration Form
+        </title>
+
+        <style>
+            body
+            {
+                font-family:Arial,sans-serif;
+                background-color :rgb(102, 154, 200);
+                margin : 40px;
+            }
+            .form-container
+            {
+                width :400px;
+                margin : auto;
+                background-color: aqua;
+                padding: 20px;
+                border : 2px solid blanchedalmond;
+                border-radius :10px;
+                box-shadow : 0 0 10px lightgray;
+            }
+
+            input[type="submit"]
+            {
+                width:100%;
+                padding:10px;
+                background-color:darkgreen;
+                color:white;
+                border: none;
+                border-radius: 5px;
+                font-size: 16px;
+                cursor:pointer;
+
+            }
+
+            input[type="submit"]:hover
+            {
+                background-color:navy;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+        <div  class="form-container">
+            <h2>User Registration Form</h2>
+
+            <form action ="Third.php" method ="post">
+
+                <div class="row">
+                    <div class="field">
+                        <label for="name">Name:</label>
+                        <input type="text"  id ="name" name ="name" required>
+
+                    </div>
+                    <div class="field">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name ="email" >
+                    </div>
+                </div>
+          
+
+                <label > Gender:</label><br>
+                <input type="radio" id ="male" name="gender" value="male">
+                <label for="man" >Male</label>
+
+                <input type="radio" id="female" name ="gender" value="female">
+                <label for ="female">female</label>
+
+                <input type ="radio" id ="none" name ="gender" value="other"
+                <label for ="trans">Trans</label>
+
+                <label for ="dob">Date of Birth:</label><br>
+                <input type="date" id="dob" name="dob">
+
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+    </body>
+</html>
