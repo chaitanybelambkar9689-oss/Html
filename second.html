@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <title>
+            Image,Hyperlink,and Nested Table
+        </title>
+
+        <style>
+            body
+            {
+                font-family : Arial,sans-serif;
+                background-color : gray;  
+                margin :40px;
+            }
+            .container
+            {
+                width : 60%;
+                margin :auto;
+                background-color : rgb(91, 70, 70);
+                padding : 20px;
+                border-radius :10px;
+                box-shadow : 0 0 10px gray;
+
+            }
+
+            h1
+            {
+                text-align :center;
+                color : darkblue;
+                text-decoration : underline;
+            }
+
+            p
+            {
+                font-size : 18px;
+                line-height : 1.6;
+            }
+            b
+            {
+                color :darkred;
+            }
+
+            img 
+            {
+                display: block;
+                margin :20px auto;
+                border : 3px solid #333;
+                border-radius :10px;
+            }
+
+            a
+            {
+                display : block;
+                text-align :center;
+                margin :15px 0;
+                font-size :18px;
+                color :wheat;
+                text-decoration : none;
+
+            }
+
+            a:hover
+            {
+                color :red;
+                text-decoration :underline;
+            }
+
+            table
+            {
+                width : 70%;
+                margin :20px auto;
+                border-collapse :collapse;
+                background-color: white;
+            }
+
+            th,td
+            {
+                border :1px solid black;
+                padding :10px;
+                text-align :center;
+            }
+
+            th
+            {
+                background-color: lightblue;
+            }
+
+            .inner-table
+            {
+                width: 100%;
+                margin : 0;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <h1> HTML Demo Page</h1>
+
+        <img src="https://via.placeholder.com/300x150" 
+        alt="Sample Image"
+        width="300"
+        height="150">
+
+        <a href="https://www.google.com" target ="blank"> Visit Google
+        </a>
+
+        <table>
+            <tr>
+                <th> Main Category</th>
+                <th>Details (Nested Table)</th>
+            </tr>
+
+            <tr>
+                <td>Sudent Information</td>
+                <td>
+                    <table class="inner-table">
+                        <tr>
+                            <th>Name</th>
+                            <th> Course</th>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                John Doe
+                            </td>
+                            <td>BCA</td>
+                        </tr>
+                        <tr>
+                            <td> Jane Smith</td>
+                            <td>BSC.IT</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </body>
+
+</html>
